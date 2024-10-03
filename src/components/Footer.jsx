@@ -17,7 +17,7 @@ import {
           bg={["primary.500", "primary.500", "transparent", "transparent"]}
         >
           <Logo />
-          <Text>© {new Date().getFullYear()} kinship.</Text>
+          <Text>© {new Date().getFullYear()} risecom.</Text>
       </Flex>
     );
   }

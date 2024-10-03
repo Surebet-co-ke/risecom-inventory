@@ -36,7 +36,7 @@ const Logo = () => {
           
                 
         </svg>
-        <Text style={textStyle} color="blue.600">•°•° kinship •°•°</Text>
+        <Text style={textStyle} color="blue.600">•°•° risecom •°•°</Text>
       </Box>
     </Link>
   );
