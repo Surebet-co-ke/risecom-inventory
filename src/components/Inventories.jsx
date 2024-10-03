@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Table, Thead, Tbody, Tr, Th, Td, Input, Flex, Box, Heading } from "@chakra-ui/react";
+
 import { inventoryData } from '../data/inventory';
 
 const Inventories = () => {
@@ -25,6 +26,7 @@ const Inventories = () => {
         <Table variant="striped" size="md">
           <Thead>
             <Tr>
+              <Th>No</Th>
               <Th>Item Name</Th>
               <Th>Description</Th>
               <Th>Item Code</Th>
@@ -32,8 +34,9 @@ const Inventories = () => {
             </Tr>
           </Thead>
           <Tbody>
-            {filteredInventory.map(item => (
+            {filteredInventory.map((item, index) => (
               <Tr key={item.id}>
+                <Td>{index + 1}</Td> 
                 <Td>{item.itemName}</Td>
                 <Td>{item.description}</Td>
                 <Td>{item.itemCode}</Td>

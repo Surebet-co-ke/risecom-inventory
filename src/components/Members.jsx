@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import { Box, Flex, Heading, Text, SimpleGrid, Image, Input } from "@chakra-ui/react";
+
 import { membersData } from '../data/members';
 
 const Members = () => {
-  // State for storing the search query
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Function to handle the change in search input
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
 
-  // Filter members based on search query (name, workEmail, or personalEmail)
   const filteredMembers = membersData.filter((member) =>
     member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     member.workEmail.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -73,6 +71,9 @@ const Members = () => {
 
             <Text fontSize="md" color="primary.800" opacity="0.8" mb={4}>
               Personal Email: {member.personalEmail}
+            </Text>
+            <Text fontSize="md" color="primary.800" opacity="0.8" mb={4}>
+              Phone: {member.phone}
             </Text>
           </Box>
         ))}

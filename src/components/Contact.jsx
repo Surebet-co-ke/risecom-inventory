@@ -7,13 +7,7 @@ const contactData = [
     id: 1, 
     name: "Phone", 
     icon: <FaPhone />, 
-    number: "+254797124132" 
-  },
-  { 
-    id: 2, 
-    name: "Phone", 
-    icon: <FaPhone />, 
-    number: "+254797933327"  
+    number: "+254710866519" 
   },
   { 
     id: 1, 
